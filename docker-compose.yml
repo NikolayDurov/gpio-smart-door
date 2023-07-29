@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx-conf/default:/etc/nginx/conf.d/nginx.conf
+      - ./public:/var/www/nginx/public
+      - ./logs:/var/log/nginx/
+    links:
+      - php-fpm
+
+  php-fpm:
+    image: php:7.0-fpm
+    ports:
+      - 9000:9000
+    volumes:
+      - ./public:/var/www/nginx/public
+      - ./logs:/var/log/nginx/
+      - ./ports-info:/var/www/nginx/public/ports-info
+      #- /usr/local/bin/:/var/www/gpio/
+      #- /var/run/docker.sock:/var/run/docker.sock

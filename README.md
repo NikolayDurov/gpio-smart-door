@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Proxmox+8+Fail2Ban+Setup)](https://github.com/NikolayDurov/gpio-smart-door)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=GPIO+Smart+Door)](https://github.com/NikolayDurov/gpio-smart-door)
 
 Check door open/close state and send message when it states change.
 Lighting heartbeat when system works
