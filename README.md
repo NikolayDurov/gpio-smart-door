@@ -11,4 +11,5 @@ Before start add telegram token in file `/public/index.php` needed
 - start.sh - bash script to run all steps
 - docker-compose.yml
 - php scripts to 
+- gpio-lamp-test.sh - for test gpio
 
